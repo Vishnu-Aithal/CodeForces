@@ -1,0 +1,14 @@
+{
+  "env": {
+    "es2015": true
+  },
+  "plugins": ["es5"],
+  "extends": ["eslint:recommended", "plugin:es5/no-es2016"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2015
+  },
+  "rules": {
+    "es5/no-destructuring": "error"
+  }
+}
