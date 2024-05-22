@@ -9,6 +9,7 @@
     "ecmaVersion": 2015
   },
   "rules": {
-    "es5/no-destructuring": "error"
+    "es5/no-destructuring": "error",
+    "es5/no-default-parameters": "error"
   }
 }
