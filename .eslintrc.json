@@ -1,15 +1,21 @@
 {
-  "env": {
-    "es2015": true
-  },
-  "plugins": ["es5"],
-  "extends": ["eslint:recommended", "plugin:es5/no-es2016"],
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2015
-  },
-  "rules": {
-    "es5/no-destructuring": "error",
-    "es5/no-default-parameters": "error"
-  }
+    "env": {
+        "es2015": true
+    },
+    "plugins": [
+        "es-x"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:es-x/restrict-to-es2015"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2015
+    },
+    "rules": {
+        "es-x/no-destructuring": "error",
+        "es-x/no-default-parameters": "error",
+        "es-x/no-spread-elements": "error"
+    }
 }

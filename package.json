@@ -1,15 +1,16 @@
 {
-  "name": "codeforces",
-  "version": "1.0.0",
-  "description": "Codeforces like local env",
-  "main": "code.mjs",
-  "scripts": {
-    "code": "node ./src/code.mjs"
-  },
-  "author": "vishnu-aithal",
-  "license": "ISC",
-  "dependencies": {
-    "eslint": "8.57.0",
-    "eslint-plugin-es5": "^1.5.0"
-  }
+    "name": "codeforces",
+    "version": "1.0.0",
+    "description": "Codeforces like local env",
+    "main": "code.mjs",
+    "scripts": {
+        "code": "node ./src/code.mjs"
+    },
+    "author": "vishnu-aithal",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "8.57.0",
+        "eslint-plugin-es-x": "^8.0.0"
+    }
 }
