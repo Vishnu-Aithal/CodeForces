@@ -5,9 +5,9 @@ const OutputFilePath = "./src/output.txt"
 
 fs.writeFileSync(OutputFilePath, '')
 
-export const print = (line) => {
-    console.log(line)
-    fs.appendFileSync(OutputFilePath, line + '\n')
+export const print = (...args) => {
+    console.log(...args)
+    fs.appendFileSync(OutputFilePath, args.join(" ") + '\n')
 }
 
 export const createDebugLogger = (currIterator, targetTc) => {
