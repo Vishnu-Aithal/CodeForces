@@ -4,13 +4,17 @@
     "description": "Codeforces like local env",
     "main": "code.mjs",
     "scripts": {
-        "code": "node ./src/code.mjs"
+        "code": "cat src/input.txt | node src/code.mjs > src/output.txt",
+        "test": "node utils/test.mjs"
     },
     "author": "vishnu-aithal",
     "license": "ISC",
-    "dependencies": {},
+    "engines": {
+        "node": "=15.8.0"
+    },
     "devDependencies": {
         "eslint": "8.57.0",
-        "eslint-plugin-es-x": "^8.0.0"
+        "eslint-plugin-es-x": "^8.0.0",
+        "eslint-plugin-node": "^11.1.0"
     }
 }

@@ -1,21 +1,9 @@
 {
-    "env": {
-        "es2015": true
-    },
-    "plugins": [
-        "es-x"
-    ],
     "extends": [
         "eslint:recommended",
-        "plugin:es-x/restrict-to-es2015"
+        "plugin:node/recommended"
     ],
     "parserOptions": {
-        "sourceType": "module",
-        "ecmaVersion": 2015
-    },
-    "rules": {
-        "es-x/no-destructuring": "error",
-        "es-x/no-default-parameters": "error",
-        "es-x/no-spread-elements": "error"
+        "sourceType": "module"
     }
 }

@@ -2,25 +2,11 @@ import fs from "node:fs";
 
 const OutputFilePath = "./src/output.txt"
 
-
-fs.writeFileSync(OutputFilePath, '')
-
-export const print = (...args) => {
-    console.log(...args)
-    fs.appendFileSync(OutputFilePath, args.join(" ") + '\n')
-}
-
-export const createDebugLogger = (currIterator, targetTc) => {
-    if (currIterator === targetTc - 1) {
-        return (...args) => console.log("debug log - ", ...args)
-    }
-    return () => { }
-}
 export const test = () => {
     const answerFile = fs.readFileSync("./src/answer.txt", "utf8");
     const answerLines = answerFile.split("\n");
 
-    if (answerLines.at(-1) !== "") {
+    if (answerLines[answerLines.length - 1] !== "") {
         throw Error("No New line at the end of answer file");
     }
 
@@ -39,3 +25,5 @@ export const test = () => {
         console.log("All Tests passed")
     }
 }
+
+test()
